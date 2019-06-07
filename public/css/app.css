@@ -1,0 +1,25 @@
+body{
+    background-color: rgba(219, 223, 167, 0.938);
+    font-family: "Helvetica","Helvetica-Neue", "Arial";
+}
+
+
+.entry{
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.entry h3 {
+    margin-top:0px;
+}
+.new-entry {
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+footer{
+  bottom: 2rem;
+  position: absolute;
+}

@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/css/app.css" >
+    </head>
+    <body>
+       <p> <%= entries.length %> </p>
+        <% for(let entry of entries) { %>
+            <div class="entry">
+                <h3><%= entry.title %></h3>
+                <p><%= entry.content %></p>
+            </div>
+        <% } %>
+
+        <form class="new-entry" method="POST" action="/guestbook/new">
+
+            <label for="text">Title:</label><br>
+            <input type="text" name="title" id="title"/>
+            <br>
+            <label for="text">Inhalt:</label><br>
+            <textarea name="content" id="content"></textarea>
+            <br>
+            <input type="submit" value="Absenden!" />
+        </form>
+
+
+<footer>
+  <p>Diese Seite ist während des Kurs mit <a href="https://www.udemy.com/javascript-bootcamp/">Jannis Seemann</a> gemacht.- <a href="https://github.com/DominikaMiodowska">Dominika Miodowska</a>. 
+</p>
+</footer>
+
+        <script type="text/javascript" src="/js/index.js"></script>
+
+
+    </body>
+</html>
