@@ -20,7 +20,7 @@ fs.readFile("./data.json", "utf-8", (err, data) => {    // see file
     app.set("view engine", "ejs");
     app.set("views", "./views");
 
-    app.use(bodyParser.urlencoded({extended: true}));       // send dane
+    app.use(bodyParser.urlencoded({extended: true}));       // send data
     app.use(express.static("./public"));
 
 
